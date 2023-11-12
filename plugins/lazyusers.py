@@ -18,6 +18,6 @@ async def start(client,message):
 	id = str(getid())
 	ids = id.split(',')
 
-	await message.reply_text(f"⚡️ All IDS : {ids}\n\n⚡️ Total User :- {total_user()}\n\n⚡️ Total Renamed File :- {total_rename}\nV Total Size Renamed :- {humanbytes(int(total_size))}",quote=True,
-                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("🦋 Close Menu 🦋", callback_data="cancel")]]) 
+	await message.reply_text(f"⚡️ Aʟʟ IDS : {ids}\n\n⚡️ Total User :- {total_user()}\n\n⚡️ Tᴏᴛᴀʟ Rᴇɴᴀᴍᴇᴅ Fɪʟᴇꜱ :- {total_rename}\nV Tᴏᴛᴀʟ Sɪᴢᴇ Rᴇɴᴀᴍᴇᴅ :- {humanbytes(int(total_size))}",quote=True,
+                             reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("🦋 Cʟᴏꜱᴇ Mᴇɴᴜ 🦋", callback_data="cancel")]]) 
                              )
