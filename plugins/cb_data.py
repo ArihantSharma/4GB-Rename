@@ -45,7 +45,7 @@ async def rename(bot, update):
     chat_id = update.message.chat.id
     id = update.message.reply_to_message_id
     await update.message.delete()
-    await update.message.reply_text(f"⌨ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙀𝙣𝙩𝙚𝙧 𝙏𝙝𝙚 𝙉𝙚𝙬 𝙁𝙞𝙡𝙚𝙣𝙖𝙢𝙚...\n\nNote:- 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐍𝐨𝐭 𝐑𝐞𝐪𝐮𝐢𝐫𝐞𝐝", reply_to_message_id=id,
+    await update.message.reply_text(f"⌨ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙀𝙣𝙩𝙚𝙧 𝙏𝙝𝙚 𝙉𝙚𝙬 𝙁𝙞𝙡𝙚𝙣𝙖𝙢𝙚...\n\n𝗡𝗼𝘁𝗲 :- 𝐄𝐱𝐭𝐞𝐧𝐬𝐢𝐨𝐧 𝐍𝐨𝐭 𝐑𝐞𝐪𝐮𝐢𝐫𝐞𝐝", reply_to_message_id=id,
                                     reply_markup=ForceReply(True))
     dateupdate(chat_id, date)
 
