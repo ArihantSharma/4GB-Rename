@@ -31,7 +31,7 @@ async def refunc(client, message):
                 markup = InlineKeyboardMarkup(
                     [[InlineKeyboardButton("📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc")]])
             # dont chenge this message.reply_text
-            await message.reply_text(f"𝐒𝐞𝐥𝐞𝐜𝐭 𝐓𝐡𝐞 𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞\n𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞𝐍𝐚𝐦𝐞 :- `{out_filename}`", reply_to_message_id=mg_id, reply_markup=markup)
+            await message.reply_text(f"⚙ 𝐒𝐞𝐥𝐞𝐜𝐭 𝐓𝐡𝐞 𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞\n\n𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞𝐍𝐚𝐦𝐞 :- `{out_filename}`", reply_to_message_id=mg_id, reply_markup=markup)
 
         except:
             try:
@@ -53,5 +53,5 @@ async def refunc(client, message):
                 markup = InlineKeyboardMarkup(
                     [[InlineKeyboardButton("📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc")]])
             # dont chenge this message.reply_text
-            await message.reply_text(f"𝐒𝐞𝐥𝐞𝐜𝐭 𝐓𝐡𝐞 𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞\n𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞𝐍𝐚𝐦𝐞:- `{out_filename}`",
+            await message.reply_text(f"⚙ 𝐒𝐞𝐥𝐞𝐜𝐭 𝐓𝐡𝐞 𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞 𝐓𝐲𝐩𝐞\n\n𝐎𝐮𝐭𝐩𝐮𝐭 𝐅𝐢𝐥𝐞𝐍𝐚𝐦𝐞:- `{out_filename}`",
                                      reply_to_message_id=mg_id, reply_markup=markup)
