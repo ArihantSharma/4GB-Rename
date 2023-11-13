@@ -7,8 +7,8 @@ from pyrogram.types import (
 
 async def progress_for_pyrogram(
     current,
-    total,
-    reply_markup, 
+    total,  
+    markup, 
     ud_type,
     message,
     start
@@ -34,7 +34,8 @@ async def progress_for_pyrogram(
         
         markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
 
-        tmp = progress + "{0} of {1}\n𝐒𝐩𝐞𝐞𝐝 : {2}/s\n𝐄𝐓𝐀 : {3}\n", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]]).format(
+        tmp = progress + "{0} of {1}\n𝐒𝐩𝐞𝐞𝐝 : {2}/s\n𝐄𝐓𝐀 : {3}\n".format(
+            humanbytes(current),lineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]]).format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
