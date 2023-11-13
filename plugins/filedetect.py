@@ -21,9 +21,8 @@ async def refunc(client, message):
             out_filename = new_name
             await message.reply_to_message.delete()
             if mime == "video":
-                markup = InlineKeyboardMarkup([[
-                    InlineKeyboardButton("📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc"),
-                    InlineKeyboardButton("🎥 Vɪᴅᴇᴏ", callback_data="vid")]])
+                markup = InlineKeyboardMarkup([[InlineKeyboardButton(
+                    "📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc"), InlineKeyboardButton("🎥 Vɪᴅᴇᴏ", callback_data="vid")], [InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
             elif mime == "audio":
                 markup = InlineKeyboardMarkup([[InlineKeyboardButton(
                     "📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc"), InlineKeyboardButton("🎵 Aᴜᴅɪᴏ", callback_data="aud")]])
@@ -45,7 +44,7 @@ async def refunc(client, message):
             await message.reply_to_message.delete()
             if mime == "video":
                 markup = InlineKeyboardMarkup([[InlineKeyboardButton(
-                    "📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc"), InlineKeyboardButton("🎥 Vɪᴅᴇᴏ", callback_data="vid")]])
+                    "📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc"), InlineKeyboardButton("🎥 Vɪᴅᴇᴏ", callback_data="vid")], [InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
             elif mime == "audio":
                 markup = InlineKeyboardMarkup([[InlineKeyboardButton(
                     "📁 Dᴏᴄᴜᴍᴇɴᴛ", callback_data="doc"), InlineKeyboardButton("🎵 Aᴜᴅɪᴏ", callback_data="aud")]])
