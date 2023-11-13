@@ -23,7 +23,7 @@ async def delete_caption(client, message):
 async def see_caption(client, message): 
     caption = find(int(message.chat.id))[1]
     if caption:
-       await message.reply_text(f"<code><u>Your Caption:</code></u>\n\n`{caption}`")
+       await message.reply_text(f"<code>Your Caption:</code>\n\n`{caption}`")
     else:
        await message.reply_text("𝐘𝐨𝐮 𝐃𝐨𝐧'𝐭 𝐇𝐚𝐯𝐞 𝐀𝐧𝐲 𝐀𝐮𝐬𝐭𝐨𝐦 𝐂𝐚𝐩𝐭𝐢𝐨𝐧 𝐘𝐞𝐭 🙂")
           
