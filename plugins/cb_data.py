@@ -52,9 +52,7 @@ async def rename(bot, update):
 
 @Client.on_callback_query(filters.regex("doc"))
 async def doc(bot, update):
-    text = """\nKᴇᴇᴘ ꜱᴜᴘᴘᴏʀᴛ Uꜱ 😊"""
-	keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
-    new_name = await update.message.text(text = text,reply_markup = keybord)
+    new_name = update.message.text
     used_ = find_one(update.from_user.id)
     used = used_["used_limit"]
     date = used_["date"]
@@ -146,9 +144,7 @@ async def doc(bot, update):
 
 @Client.on_callback_query(filters.regex("vid"))
 async def vid(bot, update):
-    text = """\nKᴇᴇᴘ ꜱᴜᴘᴘᴏʀᴛ Uꜱ 😊"""
-	keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
-    new_name = await update.message.text(text = text,reply_markup = keybord)
+    new_name = update.message.text
     used_ = find_one(update.from_user.id)
     used = used_["used_limit"]
     date = used_["date"]
@@ -250,9 +246,7 @@ async def vid(bot, update):
 
 @Client.on_callback_query(filters.regex("aud"))
 async def aud(bot, update):
-    text = """\nKᴇᴇᴘ ꜱᴜᴘᴘᴏʀᴛ Uꜱ 😊"""
-	keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
-    new_name = await update.message.text(text = text,reply_markup = keybord)
+    new_name = update.message.text
     used_ = find_one(update.from_user.id)
     used = used_["used_limit"]
     name = new_name.split(":-")
