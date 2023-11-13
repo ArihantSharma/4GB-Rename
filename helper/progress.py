@@ -27,6 +27,8 @@ async def progress_for_pyrogram(
             ''.join(["●" for i in range(math.floor(percentage / 5))]),
             ''.join(["○" for i in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2))
+        
+        markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
 
         tmp = progress + "{0} of {1}\n𝐒𝐩𝐞𝐞𝐝 : {2}/s\n𝐄𝐓𝐀 : {3}\n".format(
             humanbytes(current),
