@@ -68,7 +68,7 @@ async def doc(bot, update):
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...", reply_markup = keybord, c_time))
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...", keybord, c_time))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -161,7 +161,7 @@ async def vid(bot, update):
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  reply_markup = keybord, c_time))
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...", keybord, c_time))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -262,7 +262,7 @@ async def aud(bot, update):
     keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
     c_time = time.time()
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  reply_markup = keybord, c_time))
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  keybord, c_time))
     except Exception as e:
         neg_used = used - int(file.file_size)
         used_limit(update.from_user.id, neg_used)
