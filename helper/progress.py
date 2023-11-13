@@ -8,7 +8,7 @@ from pyrogram.types import (
 async def progress_for_pyrogram(
     current,
     total,
-    InlineKeyboardMarkup
+    InlineKeyboardMarkup, 
     ud_type,
     message,
     start
