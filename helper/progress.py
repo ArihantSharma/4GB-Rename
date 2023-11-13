@@ -1,5 +1,8 @@
 import math
 import time
+from pyrogram import Client, filters
+from pyrogram.types import (
+    InlineKeyboardButton, InlineKeyboardMarkup, ForceReply)
 
 
 async def progress_for_pyrogram(
