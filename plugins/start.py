@@ -17,13 +17,13 @@ import os
 
 CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")
-ADMIN = int(os.environ.get("ADMIN", 6430525233))
-bot_username = os.environ.get("BOT_USERNAME","Public_renamebot")
-log_channel = int(os.environ.get("LOG_CHANNEL", "-1002072415415"))
-token = os.environ.get('TOKEN', '')
+ADMIN = int(os.environ.get("ADMIN", 6263893478))
+bot_username = os.environ.get("BOT_USERNAME","public_renamerbot")
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1002066295284"))
+token = os.environ.get('TOKEN', '6927866559:AAFCRzLBFtIrotS9iDsGK7DO9H9FPhL9F7c')
 botid = token.split(':')[0]
 FLOOD = 500
-LAZY_PIC = os.environ.get("LAZY_PIC", "")
+LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/76d2ce61434f88159952b.jpg")
 
 
 # Part of Day --------------------
