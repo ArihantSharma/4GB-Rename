@@ -66,8 +66,9 @@ async def doc(bot, update):
     c_time = time.time()
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
-    try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time))
+    try: 
+        markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time, markup))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -107,7 +108,8 @@ async def doc(bot, update):
     if value < file.file_size:
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         try:
-            filw = await app.send_document(log_channel, document=file_path, thumb=ph_path, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+            filw = await app.send_document(log_channel, document=file_path, thumb=ph_path, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time, markup))
             from_chat = filw.chat.id
             mg_id = filw.id
             time.sleep(2)
@@ -131,7 +133,8 @@ async def doc(bot, update):
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         c_time = time.time()
         try:
-            await bot.send_document(update.from_user.id, document=file_path, thumb=ph_path, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+            await bot.send_document(update.from_user.id, document=file_path, thumb=ph_path, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time, markup))
             await ms.delete()
             os.remove(file_path)
         except Exception as e:
@@ -159,7 +162,8 @@ async def vid(bot, update):
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time))
+        markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time, markup))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -209,7 +213,8 @@ async def vid(bot, update):
     if value < file.file_size:
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         try:
-            filw = await app.send_video(log_channel, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+            filw = await app.send_video(log_channel, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time, markup))
             from_chat = filw.chat.id
             mg_id = filw.id
             time.sleep(2)
@@ -233,7 +238,8 @@ async def vid(bot, update):
         await ms.edit("`𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         c_time = time.time()
         try:
-            await bot.send_video(update.from_user.id, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+            await bot.send_video(update.from_user.id, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time, markup))
             await ms.delete()
             os.remove(file_path)
         except Exception as e:
@@ -259,7 +265,8 @@ async def aud(bot, update):
     ms = await update.message.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...")
     c_time = time.time()
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time))
+        markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time, markup))
     except Exception as e:
         neg_used = used - int(file.file_size)
         used_limit(update.from_user.id, neg_used)
@@ -294,7 +301,8 @@ async def aud(bot, update):
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         c_time = time.time()
         try:
-            await bot.send_audio(update.message.chat.id, audio=file_path, caption=caption, thumb=ph_path, duration=duration, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+            await bot.send_audio(update.message.chat.id, audio=file_path, caption=caption, thumb=ph_path, duration=duration, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time, markup))
             await ms.delete()
             os.remove(file_path)
             os.remove(ph_path)
@@ -308,7 +316,8 @@ async def aud(bot, update):
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         c_time = time.time()
         try:
-            await bot.send_audio(update.message.chat.id, audio=file_path, caption=caption, duration=duration, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+            await bot.send_audio(update.message.chat.id, audio=file_path, caption=caption, duration=duration, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time, markup))
             await ms.delete()
             os.remove(file_path)
         except Exception as e:
