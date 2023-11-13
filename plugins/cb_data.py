@@ -1,4 +1,4 @@
-from helper.progress import progress_for_pyrogram, TimeFormatter, InlineKeyboardMarkup, InlineKeyboardButton
+from helper.progress import progress_for_pyrogram, TimeFormatter
 
 from pyrogram import Client, filters
 from pyrogram.types import (
@@ -52,7 +52,9 @@ async def rename(bot, update):
 
 @Client.on_callback_query(filters.regex("doc"))
 async def doc(bot, update):
-    new_name = update.message.text
+    text = """\nKᴇᴇᴘ ꜱᴜᴘᴘᴏʀᴛ Uꜱ 😊"""
+	keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+    new_name = await update.message.text(text = text,reply_markup = keybord)
     used_ = find_one(update.from_user.id)
     used = used_["used_limit"]
     date = used_["date"]
@@ -67,7 +69,7 @@ async def doc(bot, update):
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time, keybord=InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]]))) 
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -144,7 +146,9 @@ async def doc(bot, update):
 
 @Client.on_callback_query(filters.regex("vid"))
 async def vid(bot, update):
-    new_name = update.message.text
+    text = """\nKᴇᴇᴘ ꜱᴜᴘᴘᴏʀᴛ Uꜱ 😊"""
+	keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+    new_name = await update.message.text(text = text,reply_markup = keybord)
     used_ = find_one(update.from_user.id)
     used = used_["used_limit"]
     date = used_["date"]
@@ -159,7 +163,7 @@ async def vid(bot, update):
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time, keybord=InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])))
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -246,7 +250,9 @@ async def vid(bot, update):
 
 @Client.on_callback_query(filters.regex("aud"))
 async def aud(bot, update):
-    new_name = update.message.text
+    text = """\nKᴇᴇᴘ ꜱᴜᴘᴘᴏʀᴛ Uꜱ 😊"""
+	keybord = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
+    new_name = await update.message.text(text = text,reply_markup = keybord)
     used_ = find_one(update.from_user.id)
     used = used_["used_limit"]
     name = new_name.split(":-")
@@ -259,7 +265,7 @@ async def aud(bot, update):
     ms = await update.message.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...")
     c_time = time.time()
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time, keybord=InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])))
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱...",  ms, c_time))
     except Exception as e:
         neg_used = used - int(file.file_size)
         used_limit(update.from_user.id, neg_used)
