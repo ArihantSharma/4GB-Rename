@@ -8,7 +8,6 @@ from pyrogram.types import (
 async def progress_for_pyrogram(
     current,
     total,  
-    markup, 
     ud_type,
     message,
     start
@@ -34,9 +33,8 @@ async def progress_for_pyrogram(
         
         markup = InlineKeyboardMarkup([[InlineKeyboardButton("Cᴀɴᴄᴇʟ ✖️ ", callback_data="cancel")]])
 
-        tmp = progress + "{0} of {1}\n𝐒𝐩𝐞𝐞𝐝 : {2}/s\n𝐄𝐓𝐀 : {3}\n" + markup.format(
-            humanbytes(current),
-            humanbytes(current),
+        tmp = progress + "{0} of {1}\n𝐒𝐩𝐞𝐞𝐝 : {2}/s\n𝐄𝐓𝐀 : {3}\n".format(
+            humanbytes(current), 
             humanbytes(total),
             humanbytes(speed),
             # elapsed_time if elapsed_time != '' else "0 s",
