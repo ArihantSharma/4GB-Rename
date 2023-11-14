@@ -15,7 +15,7 @@ from helper.database import daily as daily_
 from helper.date import check_expi
 import os
 
-CHANNEL = os.environ.get('CHANNEL', "")
+CHANNEL = os.environ.get('CHANNEL', "Max_Leech_Zone_Update)
 STRING = os.environ.get("STRING", "")
 ADMIN = int(os.environ.get("ADMIN", 6263893478))
 bot_username = os.environ.get("BOT_USERNAME","public_renamerbot")
