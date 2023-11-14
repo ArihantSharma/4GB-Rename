@@ -4,8 +4,8 @@ import os
 from pyrogram import Client, filters
 from helper.date import add_date
 from helper.database import uploadlimit, usertype, addpre
-ADMIN = int(os.environ.get("ADMIN", 6263893478))
-log_channel = int(os.environ.get("LOG_CHANNEL", "-1002066295284"))
+ADMIN = int(os.environ.get("ADMIN", 6430525233))
+log_channel = int(os.environ.get("LOG_CHANNEL", "-1002072415415"))
 
 
 @Client.on_message(filters.private & filters.user(ADMIN) & filters.command(["warn"]))
@@ -30,7 +30,6 @@ async def buypremium(bot, message):
 				   ], [
 					InlineKeyboardButton("💎 Dɪᴀᴍᴏɴᴅ", callback_data="vip3")
 					]]))
-
 
 
 @Client.on_message((filters.channel | filters.private) & filters.user(ADMIN) & filters.command(["ceasepower"]))
@@ -62,7 +61,7 @@ async def vip1(bot,update):
 	await update.message.edit("Aᴅᴅᴇᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ Tᴏ Pʀᴇᴍɪᴜᴍ Uᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 𝟷𝟶 GB 🤝")
 	await bot.send_message(user_id,"Hᴇʏ ʏᴏᴜ ᴀʀᴇ Uᴘɢʀᴀᴅᴇᴅ Tᴏ ꜱɪʟᴠᴇʀ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 	await bot.send_message(log_channel,f"⚡️ Pʟᴀɴ Uᴘɢʀᴀᴅᴇᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ 💥\n\nHᴇʏ ʏᴏᴜ ᴀʀᴇ Uᴘɢʀᴀᴅᴇᴅ Tᴏ ꜱɪʟᴠᴇʀ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
-	
+
 @Client.on_callback_query(filters.regex('vip2'))
 async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
@@ -78,8 +77,8 @@ async def vip2(bot,update):
 async def vip3(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit = 107374182400
-	uploadlimit(int(user_id), 107374182400)
+	inlimit = 1073741824000
+	uploadlimit(int(user_id), 1073741824000)
 	usertype(int(user_id),"💎 **Dɪᴀᴍᴏɴᴅ**")
 	addpre(int(user_id))
 	await update.message.edit("Aᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ Tᴏ Pʀᴇᴍɪᴜᴍ Uᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 𝟷𝟶𝟶 GB 🤝")
@@ -124,9 +123,9 @@ async def cp3(bot,update):
 async def dft(bot,update):
 	id = update.message.reply_to_message.text.split("/resetpower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 21474836480
-	uploadlimit(int(user_id), 21474836480)
-	usertype(int(user_id),"**Fʀᴇᴇ**")
+	inlimit = 1288490188
+	uploadlimit(int(user_id), 1288490188)
+	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
 	await update.message.edit("Dᴀɪʟʏ Dᴀᴛᴀ Lɪᴍɪᴛ Hᴀꜱ Bᴇᴇɴ Rᴇꜱᴇᴛ Sᴜᴄᴄᴇꜱꜱꜱғᴜʟʟʏ.\nTʜɪꜱ Aᴄᴄᴏᴜɴᴛ Hᴀꜱ Dᴇғᴀᴜʟᴛ 𝟷.𝟸 GB Rᴇɴᴀᴍɪɴɢ Cᴀᴘᴀᴄɪᴛʏ ")
 	await bot.send_message(user_id,"Yᴏᴜʀ Dᴀɪʟʏ Dᴀᴛᴀ Lɪᴍɪᴛ Hᴀꜱ Bᴇᴇɴ Rᴇꜱᴇᴛ Sᴜᴄᴄᴇꜱꜱꜱғᴜʟʟʏ.\n\nCʜᴇᴄᴋ Yᴏᴜʀ Pʟᴀɴ Hᴇʀᴇ - /myplan\n- Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ 🦋<a href='https://t.me/mr_kallua'>₭𝐚𝐋𝐋Ꮼ𝐚 ...♡</a>🦋")
