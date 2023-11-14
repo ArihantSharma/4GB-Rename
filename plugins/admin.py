@@ -101,8 +101,8 @@ async def cp1(bot,update):
 async def cp2(bot,update):
 	id = update.message.reply_to_message.text.split("/ceasepower")
 	user_id = id[1].replace(" ", "")
-	inlimit = 104857600
-	uploadlimit(int(user_id), 104857600)
+	inlimit = 1073741824
+	uploadlimit(int(user_id), 1073741824)
 	usertype(int(user_id),"**Aᴄᴄᴏᴜɴᴛ Dᴏᴡɴɢʀᴀᴅᴇᴅ Tᴏ Lᴠ-𝟸**")
 	addpre(int(user_id))
 	await update.message.edit("Aᴄᴄᴏᴜɴᴛ Dᴏᴡɴɢʀᴀᴅᴇᴅ Tᴏ Lᴇᴠᴇʟ 𝟸\nTʜᴇ Uꜱᴇʀ Cᴀɴ Oɴʟʏ Uꜱᴇ 𝟷𝟶𝟶ᴍʙ/ᴅᴀʏ Fʀᴏᴍ Dᴀᴛᴀ Qᴏᴛᴀ")
