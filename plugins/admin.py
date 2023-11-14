@@ -43,40 +43,41 @@ async def vip1(bot,update):
 	user_id = id[1].replace(" ", "")
 	inlimit  = 10737418240
 	uploadlimit(int(user_id),10737418240)
-	usertype(int(user_id),"Basic")
+	usertype(int(user_id),"🪙 **Sɪʟᴠᴇʀ**")
 	addpre(int(user_id))
-	await update.message.edit("ᴜᴘʟᴏᴀᴅ  ʟɪᴍɪᴛ  ɪɴᴄʀᴇᴀꜱᴇᴅ  ᴛᴏ  10 ɢʙ  ᴘᴇʀ  ᴅᴀʏ.")
-	await bot.send_message(user_id,"ʏᴏᴜ  ᴀʀᴇ  ᴜᴘɢʀᴀᴅᴇᴅ  ᴛᴏ  ʙᴀꜱɪᴄ  ᴘʟᴀɴ.")
+	await update.message.edit("Aᴅᴅᴇᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ Tᴏ Pʀᴇᴍɪᴜᴍ Uᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 𝟷𝟶 GB 🤝")
+	await bot.send_message(user_id,"Hᴇʏ ʏᴏᴜ ᴀʀᴇ Uᴘɢʀᴀᴅᴇᴅ Tᴏ ꜱɪʟᴠᴇʀ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
+	await bot.send_message(log_channel,f"⚡️ Pʟᴀɴ Uᴘɢʀᴀᴅᴇᴅ Sᴜᴄᴄᴇꜱꜱғᴜʟʟʏ 💥\n\nHᴇʏ ʏᴏᴜ ᴀʀᴇ Uᴘɢʀᴀᴅᴇᴅ Tᴏ ꜱɪʟᴠᴇʀ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 
 @Client.on_callback_query(filters.regex('vip2'))
 async def vip2(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
 	inlimit  = 53687091200
-	uploadlimit(int(user_id),53687091200)
-	usertype(int(user_id),"Standard")
+	uploadlimit(int(user_id), 53687091200)
+	usertype(int(user_id),"💫 **Gᴏʟᴅ**")
 	addpre(int(user_id))
-	await update.message.edit("ᴜᴘʟᴏᴀᴅ  ʟɪᴍɪᴛ  ɪɴᴄʀᴇᴀꜱᴇᴅ  ᴛᴏ  50 ɢʙ  ᴘᴇʀ  ᴅᴀʏ.")
-	await bot.send_message(user_id,"ʏᴏᴜ  ᴀʀᴇ  ᴜᴘɢʀᴀᴅᴇᴅ  ᴛᴏ  ꜱᴛᴀɴᴅᴀʀᴅ  ᴘʟᴀɴ.")
+	await update.message.edit("Aᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ Tᴏ Pʀᴇᴍɪᴜᴍ Uᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 𝟻𝟶 GB 🤝")
+	await bot.send_message(user_id,"Hᴇʏ ʏᴏᴜ ᴀʀᴇ Uᴘɢʀᴀᴅᴇᴅ Tᴏ Gᴏʟᴅ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 
 @Client.on_callback_query(filters.regex('vip3'))
 async def vip3(bot,update):
 	id = update.message.reply_to_message.text.split("/addpremium")
 	user_id = id[1].replace(" ", "")
-	inlimit = 107374182400
-	uploadlimit(int(user_id), 107374182400)
-	usertype(int(user_id),"Premium")
+	inlimit = 1073741824000
+	uploadlimit(int(user_id), 1073741824000)
+	usertype(int(user_id),"💎 **Dɪᴀᴍᴏɴᴅ**")
 	addpre(int(user_id))
-	await update.message.edit("ᴜᴘʟᴏᴀᴅ  ʟɪᴍɪᴛ  ɪɴᴄʀᴇᴀꜱᴇᴅ  ᴛᴏ  100 ɢʙ  ᴘᴇʀ  ᴅᴀʏ.")
-	await bot.send_message(user_id,"ʏᴏᴜ  ᴀʀᴇ  ᴜᴘɢʀᴀᴅᴇᴅ  ᴛᴏ  ᴘʀᴇᴍɪᴜᴍ  ᴘʟᴀɴ.")
+	await update.message.edit("Aᴅᴅᴇᴅ ꜱᴜᴄᴄᴇꜱꜱғᴜʟʟʏ Tᴏ Pʀᴇᴍɪᴜᴍ Uᴘʟᴏᴀᴅ ʟɪᴍɪᴛ 𝟷𝟶𝟶 GB 🤝")
+	await bot.send_message(user_id,"Hᴇʏ ʏᴏᴜ ᴀʀᴇ Uᴘɢʀᴀᴅᴇᴅ Tᴏ Dɪᴀᴍᴏɴᴅ. ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ʜᴇʀᴇ /myplan")
 
 @Client.on_callback_query(filters.regex('dft'))
 async def dft(bot,update):
 	id = update.message.reply_to_message.text.split("/resetpower")
 	user_id = id[1].replace(" ", "")
 	inlimit = 2147483648
-	uploadlimit(int(user_id), 2147483648)
-	usertype(int(user_id),"Free")
+	uploadlimit(int(user_id), 1288490188)
+	usertype(int(user_id),"**Free**")
 	addpre(int(user_id))
-	await update.message.edit("ᴜꜱᴇʀ  ʟɪᴍɪᴛ  ʜᴀꜱ  ʙᴇᴇɴ  ʀᴇꜱᴇᴛ  ꜱᴜᴄᴄᴇꜱꜱꜱꜰᴜʟʟʏ.")
-	await bot.send_message(user_id,"ʏᴏᴜʀ  ʟɪᴍɪᴛ  ʜᴀꜱ  ʙᴇᴇɴ  ʀᴇꜱᴇᴛ  ꜱᴜᴄᴄᴇꜱꜱꜱꜰᴜʟʟʏ.\n\nᴄᴏɴᴛᴀᴄᴛ  <a href='https://telegram.dog/NobiDeveloperr'>**ᴏᴡɴᴇʀ**</a>  ꜰᴏʀ  ᴍᴏʀᴇ  ᴅᴇᴛᴀɪʟꜱ.")
+	await update.message.edit("Dᴀɪʟʏ Dᴀᴛᴀ Lɪᴍɪᴛ Hᴀꜱ Bᴇᴇɴ Rᴇꜱᴇᴛ Sᴜᴄᴄᴇꜱꜱꜱғᴜʟʟʏ.\nTʜɪꜱ Aᴄᴄᴏᴜɴᴛ Hᴀꜱ Dᴇғᴀᴜʟᴛ 𝟷.𝟸 GB Rᴇɴᴀᴍɪɴɢ Cᴀᴘᴀᴄɪᴛʏ ")
+	await bot.send_message(user_id,"Yᴏᴜʀ Dᴀɪʟʏ Dᴀᴛᴀ Lɪᴍɪᴛ Hᴀꜱ Bᴇᴇɴ Rᴇꜱᴇᴛ Sᴜᴄᴄᴇꜱꜱꜱғᴜʟʟʏ.\n\nCʜᴇᴄᴋ Yᴏᴜʀ Pʟᴀɴ Hᴇʀᴇ - /myplan\n- Cᴏɴᴛᴀᴄᴛ Aᴅᴍɪɴ 🦋<a href='https://t.me/mr_kallua'>₭𝐚𝐋𝐋Ꮼ𝐚 ...♡</a>🦋")
