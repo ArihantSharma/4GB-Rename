@@ -1,4 +1,3 @@
-
 from helper.progress import progress_for_pyrogram, TimeFormatter
 
 from pyrogram import Client, filters
@@ -104,7 +103,7 @@ async def doc(bot, update):
     else:
         ph_path = None
 
-    value = 2090000000
+    value = 4090000000
     if value < file.file_size:
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         try:
@@ -206,7 +205,7 @@ async def vid(bot, update):
             ph_path = None
             print(e)
 
-    value = 2090000000
+    value = 4090000000
     if value < file.file_size:
         await ms.edit("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         try:
@@ -234,10 +233,8 @@ async def vid(bot, update):
         await ms.edit("`𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱")
         c_time = time.time()
         try:
-            await bot.send_video(log_channel, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))            
-            time.sleep(2)
-            await bot.copy_message(update.from_user.id)
-            await ms.delete()            
+            await bot.send_video(log_channel, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
+            await ms.delete()
             os.remove(file_path)
         except Exception as e:
             neg_used = used - int(file.file_size)
