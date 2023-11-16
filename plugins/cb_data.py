@@ -234,7 +234,11 @@ async def vid(bot, update):
         c_time = time.time()
         try:
             await bot.send_video(log_channel, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))
-            await ms.delete()
+            from_chat = filw.chat.id
+            mg_id = filw.id
+            time.sleep(2)
+            await bot.copy_message(update.from_user.id, from_chat, mg_id)
+            await ms.delete()            
             os.remove(file_path)
         except Exception as e:
             neg_used = used - int(file.file_size)
