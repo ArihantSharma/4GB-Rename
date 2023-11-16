@@ -1,3 +1,4 @@
+
 from helper.progress import progress_for_pyrogram, TimeFormatter
 
 from pyrogram import Client, filters
@@ -235,7 +236,7 @@ async def vid(bot, update):
         try:
             await bot.send_video(log_channel, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗨𝗽𝗹𝗼𝗮𝗱𝗶𝗻𝗴...",  ms, c_time))            
             time.sleep(2)
-            await bot.copy_message(update.from_user.id, from_chat, mg_id)
+            await bot.copy_message(update.from_user.id)
             await ms.delete()            
             os.remove(file_path)
         except Exception as e:
