@@ -14,6 +14,7 @@ from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import check_expi
 import os
+import re, asyncio, os, sys
 
 CHANNEL = os.environ.get('CHANNEL', "Max_Leech_Zone_Update")
 STRING = os.environ.get("STRING", "")
@@ -45,6 +46,9 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
+        m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
+        await asyncio.sleep(3)
+        await m.delete()
         txt=f"""Hᴇʟʟᴏ {wish} {message.from_user.first_name } \n
 	I Aᴍ Fɪʟᴇ Rᴇɴᴀᴍᴇʀ ʙᴏᴛ, Pʟᴇᴀꜱᴇ Sᴇɴᴅ Aɴʏ Tᴇʟᴇɢʀᴀᴍ 𝗗ᴏᴄᴜᴍᴇɴᴛ 𝗢ʀ 𝗩ɪᴅᴇᴏ & Eɴᴛᴇʀ Nᴇᴡ Fɪʟᴇɴᴀᴍᴇ Tᴏ Rᴇɴᴀᴍᴇ Iᴛ 😋 \n\n /about Tᴏ Kɴᴏᴡ Mᴏʀᴇ ☺️"""
         await message.reply_photo(photo=LAZY_PIC,
