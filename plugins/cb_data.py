@@ -1,4 +1,4 @@
-from helper.progress import progress_for_pyrogram
+from helper.progress import progress_for_pyrogram, TimeFormatter
 
 from pyrogram import Client, filters
 from pyrogram.types import (
