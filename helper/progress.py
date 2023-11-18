@@ -7,7 +7,7 @@ from pyrogram.types import (
 
 async def progress_for_pyrogram(
     current,
-    total,  
+    total,
     ud_type,
     message,
     start
@@ -47,9 +47,7 @@ async def progress_for_pyrogram(
             pass
 
 
-def humanbytes(size):  
-    # https://stackoverflow.com/a/49361727/4723940
-    # 2**10 = 1024
+def humanbytes(size):   
     if not size:
         return ""
     power = 2**10
