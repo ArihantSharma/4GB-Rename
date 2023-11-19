@@ -46,7 +46,7 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-          m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
+        m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
         await asyncio.sleep(3)
         await m.delete()
         txt=f"""Hᴇʟʟᴏ {wish} {message.from_user.first_name } \n
@@ -62,9 +62,6 @@ async def start(client, message):
     if id:
         if old == True:
             try:
-	          m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
-        await asyncio.sleep(3)
-        await m.delete()
                 await client.send_message(id, "Yᴏᴜʀ Fʀɪᴇɴᴅ ɪꜱ Aʟʀᴇᴀᴅʏ Uꜱɪɴɢ Oᴜʀ Bᴏᴛ 🙊")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
