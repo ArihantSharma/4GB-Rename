@@ -96,13 +96,15 @@ async def send_doc(client,message):
        user_id = message.from_user.id
        if update_channel :
        	try:
-       		await client.get_chat_member(update_channel, user_id)
-       	except UserNotParticipant:
-       		await message.reply_text(f"""**{message.from_user.mention}**,\nDᴜᴇ  Tᴏ  Oᴠᴇʀʟᴏᴀᴅ,  Oɴʟʏ  Cʜᴀɴɴᴇʟ  Mᴇᴍʙᴇʀꜱ  Cᴀɴ  Uꜱᴇ  Mᴇ.""",
-       		reply_to_message_id = message.id,
-       		reply_markup = InlineKeyboardMarkup(
-       		[ [ InlineKeyboardButton("🔥  𝙹𝙾𝙸𝙽  𝚄𝙿𝙳𝙰𝚃𝙴  𝙲𝙷𝙰𝙽𝙽𝙴𝙻  🔥" ,url=f"https://telegram.me/{update_channel}") ]   ]))
-       		 await client.send_message(log_channel,f"🦋 #rename_logs 🦋,\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n Uꜱᴇʀ-Pʟᴀɴ : {user}\n\n ",
+       		   await client.get_chat_member(update_channel, user_id)
+        except UserNotParticipant:
+            _newus = find_one(message.from_user.id)
+            user = _newus["usertype"]
+            await message.reply_text("**__𝗬𝗼𝘂 𝗔𝗿𝗲 𝗡𝗼𝘁 𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲𝗱 𝗠𝘆 𝗖𝗵𝗮𝗻𝗻𝗲𝗹__** ",
+                                     reply_to_message_id=message.id,
+                                     reply_markup=InlineKeyboardMarkup(
+                                         [[InlineKeyboardButton("⚜ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{update_channel}")]]))
+            await client.send_message(log_channel,f"🦋 #rename_logs 🦋,\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n Uꜱᴇʀ-Pʟᴀɴ : {user}\n\n ",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Rᴇꜱᴛʀɪᴄᴛ Uꜱᴇʀ ( PM ) 🔺", callback_data="ceasepower")]]))
             return
 
