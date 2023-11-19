@@ -8,7 +8,7 @@ from helper.database import botdata, find_one, total_user
 from helper.progress import humanbytes
 
 @Client.on_message(filters.private & filters.command(["about"]))
-async def about(client,message):
+async def start(client,message):
     reply_markup = InlineKeyboardMarkup(
        		[[ InlineKeyboardButton("👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 👥" ,url=f"https://t.me/Noobseverywhere") ]])
 	botdata(int(botid))
