@@ -46,7 +46,7 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
+        m=await message.reply_sticker("CAACAgUAAxkBAAEB6w5lWnRbiLV7FZKlsEdGBhbn6VtadgACYAQAAioMGFT31AZIdDgfzB4E") 
         await asyncio.sleep(3)
         await m.delete()
         txt=f"""Hᴇʟʟᴏ {wish} {message.from_user.first_name } \n
