@@ -12,7 +12,7 @@ from helper.progress import humanbytes
 from helper.database import insert, find_one, used_limit, usertype, uploadlimit, addpredata, total_rename, total_size
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
-from helper.date import check_expi
+from helper.date import add_date ,check_expi
 import os
 import re, asyncio, os, sys
 
@@ -98,11 +98,14 @@ async def send_doc(client,message):
        	try:
        		await client.get_chat_member(update_channel, user_id)
        	except UserNotParticipant:
-       		await message.reply_text(f"""**{message.from_user.mention}**,\nᴅᴜᴇ  ᴛᴏ  ᴏᴠᴇʀʟᴏᴀᴅ,  ᴏɴʟʏ  ᴄʜᴀɴɴᴇʟ  ᴍᴇᴍʙᴇʀꜱ  ᴄᴀɴ  ᴜꜱᴇ  ᴍᴇ.""",
+       		await message.reply_text(f"""**{message.from_user.mention}**,\nDᴜᴇ  Tᴏ  Oᴠᴇʀʟᴏᴀᴅ,  Oɴʟʏ  Cʜᴀɴɴᴇʟ  Mᴇᴍʙᴇʀꜱ  Cᴀɴ  Uꜱᴇ  Mᴇ.""",
        		reply_to_message_id = message.id,
        		reply_markup = InlineKeyboardMarkup(
        		[ [ InlineKeyboardButton("🔥  𝙹𝙾𝙸𝙽  𝚄𝙿𝙳𝙰𝚃𝙴  𝙲𝙷𝙰𝙽𝙽𝙴𝙻  🔥" ,url=f"https://telegram.me/{update_channel}") ]   ]))
-       		return
+       		 await client.send_message(log_channel,f"🦋 #rename_logs 🦋,\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n Uꜱᴇʀ-Pʟᴀɴ : {user}\n\n ",
+                                                                                                       reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Rᴇꜱᴛʀɪᴄᴛ Uꜱᴇʀ ( PM ) 🔺", callback_data="ceasepower")]]))
+            return
+
        try:
            bot_data = find_one(int(botid))
            prrename = bot_data['total_rename']
