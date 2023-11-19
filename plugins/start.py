@@ -31,11 +31,11 @@ LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/76d2ce61434f88159
 currentTime = datetime.datetime.now()
 
 if currentTime.hour < 12:
-    wish = " Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ "
+    wish = " **Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ** "
 elif 12 <= currentTime.hour < 12:
-    wish = ' Gᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ '
+    wish = ' **Gᴏᴏᴅ ᴀғᴛᴇʀɴᴏᴏɴ** '
 else:
-    wish = ' Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ '
+    wish = ' **Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ** '
 
 # -------------------------------
 
