@@ -46,8 +46,14 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-        m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
-        await asyncio.sleep(3)
+          m=await message.reply_sticker("CAACAgUAAxkBAAJne2URN7T_qKMibiUh15sm-_sDXx0fAAIICQACSa0IV2c1jjKhG6SaHgQ") 
+        await asyncio.sleep(2)
+        await m.delete()
+         m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
+        await asyncio.sleep(2)
+        await m.delete()
+        m=await message.reply_sticker("CAACAgIAAxkBAAEBX4RlH6KWlmN63-NAKmqJrDfX_qB1DgACVAADQbVWDGq3-McIjQH6HgQ") 
+        await asyncio.sleep(2)
         await m.delete()
         txt=f"""Hᴇʟʟᴏ {wish} {message.from_user.first_name } \n
 	I Aᴍ Fɪʟᴇ Rᴇɴᴀᴍᴇʀ ʙᴏᴛ, Pʟᴇᴀꜱᴇ Sᴇɴᴅ Aɴʏ Tᴇʟᴇɢʀᴀᴍ 𝗗ᴏᴄᴜᴍᴇɴᴛ 𝗢ʀ 𝗩ɪᴅᴇᴏ & Eɴᴛᴇʀ Nᴇᴡ Fɪʟᴇɴᴀᴍᴇ Tᴏ Rᴇɴᴀᴍᴇ Iᴛ 😋 \n\n /about Tᴏ Kɴᴏᴡ Mᴏʀᴇ ☺️"""
