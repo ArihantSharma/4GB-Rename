@@ -26,12 +26,12 @@ async def progress_for_pyrogram(
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-        progress = "{0}{1} \n\n⏳️ 𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 : {2}%\n".format(
+        progress = "{0}{1} \n\n⏳️ Pʀᴏɢʀᴇꜱꜱ : {2}%\n".format(
             ''.join(["●" for i in range(math.floor(percentage / 5))]),
             ''.join(["○" for i in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2))
               
-        tmp = progress + "{0} of {1}\n🚀 𝐒𝐩𝐞𝐞𝐝 : {2}/s\n⏰️ 𝐄𝐓𝐀 : {3}\n".format(
+        tmp = progress + "{0} of {1}\n 🗃️ Sɪᴢᴇ: {1} | {2}\n🚀 Sᴘᴇᴇᴅ : {2}/s\n⏰️ Eᴛᴀ : {3}\n".format(
             humanbytes(current), 
             humanbytes(total),
             humanbytes(speed),
@@ -41,7 +41,7 @@ async def progress_for_pyrogram(
         try:
             await message.edit(
                 text=f"{ud_type}\n\n{tmp}",               
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✖️──── Cᴀɴᴄᴇʟ ────✖️", callback_data="cancel")]])                                               
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✖️ 𝐂𝐀𝐍𝐂𝐄𝐋 ✖️", callback_data="cancel")]])                                               
             )
         except:
             pass
