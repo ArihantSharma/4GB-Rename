@@ -46,14 +46,14 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-          m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
-        await asyncio.sleep(3)
+          m=await message.reply_text("👀")
+        await asyncio.sleep(1)
         await m.delete()
-         m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
-        await asyncio.sleep(2)
+        m=await message.reply_text("⚡")
+        await asyncio.sleep(1)
         await m.delete()
         m=await message.reply_sticker("CAACAgIAAxkBAAEBX4RlH6KWlmN63-NAKmqJrDfX_qB1DgACVAADQbVWDGq3-McIjQH6HgQ") 
-        await asyncio.sleep(2)
+        await asyncio.sleep(1)
         await m.delete()
         txt=f"""Hᴇʟʟᴏ {wish} {message.from_user.first_name } \n
 	I Aᴍ Fɪʟᴇ Rᴇɴᴀᴍᴇʀ ʙᴏᴛ, Pʟᴇᴀꜱᴇ Sᴇɴᴅ Aɴʏ Tᴇʟᴇɢʀᴀᴍ 𝗗ᴏᴄᴜᴍᴇɴᴛ 𝗢ʀ 𝗩ɪᴅᴇᴏ & Eɴᴛᴇʀ Nᴇᴡ Fɪʟᴇɴᴀᴍᴇ Tᴏ Rᴇɴᴀᴍᴇ Iᴛ 😋 \n\n /about Tᴏ Kɴᴏᴡ Mᴏʀᴇ ☺️"""
@@ -68,6 +68,15 @@ async def start(client, message):
     if id:
         if old == True:
             try:
+	         m=await message.reply_text("👀")
+        await asyncio.sleep(1)
+        await m.delete()
+        m=await message.reply_text("⚡")
+        await asyncio.sleep(1)
+        await m.delete()
+        m=await message.reply_sticker("CAACAgIAAxkBAAEBX4RlH6KWlmN63-NAKmqJrDfX_qB1DgACVAADQbVWDGq3-McIjQH6HgQ") 
+        await asyncio.sleep(1)
+        await m.delete()
                 await client.send_message(id, "Yᴏᴜʀ Fʀɪᴇɴᴅ ɪꜱ Aʟʀᴇᴀᴅʏ Uꜱɪɴɢ Oᴜʀ Bᴏᴛ 🙊")
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
