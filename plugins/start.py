@@ -46,8 +46,8 @@ async def start(client, message):
     try:
         id = message.text.split(' ')[1]
     except:
-          m=await message.reply_sticker("CAACAgUAAxkBAAJne2URN7T_qKMibiUh15sm-_sDXx0fAAIICQACSa0IV2c1jjKhG6SaHgQ") 
-        await asyncio.sleep(2)
+          m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
+        await asyncio.sleep(3)
         await m.delete()
          m=await message.reply_sticker("CAACAgIAAxkBAAEB1ZNlVwMZLKWlmagGT6bbe0SxNXzAtAACsDEAAuQ-2Ese8oqM19kLbB4E") 
         await asyncio.sleep(2)
