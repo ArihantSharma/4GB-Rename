@@ -60,9 +60,9 @@ async def start(client, message):
         await message.reply_photo(photo=LAZY_PIC,
                                 caption=txt,
                                 reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("⚜ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url="https://t.me/Max_Leech_Zone_Update")],
-                                      [InlineKeyboardButton(" 👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url='https://t.me/Noobseverywhere'),
-                                      InlineKeyboardButton("🎥 Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ", url='https://t.me/mad_cinema')],
+                                      [[InlineKeyboardButton("🔰 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🔰", url="https://t.me/Max_Leech_Zone_Update")],
+                                      [InlineKeyboardButton("👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url='https://t.me/Noobseverywhere'),
+                                      InlineKeyboardButton("🏷️ Bʏᴘᴀss Gʀᴏᴜᴘ", url='https://t.me/Max_Bypass_V71')],
                                       ]))
         return
     if id:
@@ -72,17 +72,17 @@ async def start(client, message):
                 await message.reply_photo(photo=LAZY_PIC,
                                          caption=txt,
                                          reply_markup=InlineKeyboardMarkup(
-                                             [[InlineKeyboardButton("⚜ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ ", url="https://t.me/Max_Leech_Zone_Update")],
-                                              [InlineKeyboardButton(" 👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url='https://t.me/Noobseverywhere'),
-                                             InlineKeyboardButton("🎥 Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ", url='https://t.me/mad_cinema')],
+                                             [[InlineKeyboardButton("🔰 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🔰", url="https://t.me/Max_Leech_Zone_Update")],
+                                              [InlineKeyboardButton("👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url='https://t.me/Noobseverywhere'),
+                                             InlineKeyboardButton("🏷️ Bʏᴘᴀss Gʀᴏᴜᴘ", url='https://t.me/Max_Bypass_V71')],
                                              ]))
             except:
                 return
         else:
-            await client.send_message(id, "🤩 𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬! 𝐘𝐨𝐮 𝐖𝐨𝐧 𝟏𝟎𝟎𝐌𝐁 𝐔𝐩𝐥𝐨𝐚𝐝 𝐥𝐢𝐦𝐢𝐭")
+            await client.send_message(id, "🤩 𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬! 𝐘𝐨𝐮 𝐖𝐨𝐧 𝟏𝟎𝐆𝐁 𝐔𝐩𝐥𝐨𝐚𝐝 𝐥𝐢𝐦𝐢𝐭")
             _user_ = find_one(int(id))
             limit = _user_["uploadlimit"]
-            new_limit = limit + 104857600
+            new_limit = limit + 10485760000
             uploadlimit(int(id), new_limit)
             await message.reply_text(text=f"""
 	Hello {wish} {message.from_user.first_name }\n\n
@@ -95,19 +95,19 @@ async def start(client, message):
 •  Fɪʟᴇs - Sᴜᴘᴘᴏʀᴛᴇᴅ Uᴘ Tᴏ 4GB**  \n\n /about **Tᴏ Kɴᴏᴡ Mᴏʀᴇ ☺️**
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                         [[InlineKeyboardButton("⚜ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url="https://t.me/Max_Leech_Zone_Update")],
-                                          [InlineKeyboardButton(" 👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url='https://t.me/Noobseverywhere'),
-                                          InlineKeyboardButton(" 🎥 Mᴏᴠɪᴇ Cʜᴀɴɴᴇʟ", url='https://t.me/mad_cinema')],
+                                         [[InlineKeyboardButton("🔰 Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ 🔰", url="https://t.me/Max_Leech_Zone_Update")],
+                                          [InlineKeyboardButton("👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ", url='https://t.me/Noobseverywhere'),
+                                          InlineKeyboardButton("🏷️ Bʏᴘᴀss Gʀᴏᴜᴘ", url='https://t.me/Max_Bypass_V71')],
                                           ]))
     
 
 
-@Client.on_message((filters.private & (filters.document | filters.audio | filters.video)) | filters.channel & (filters.document | filters.audio | filters.video))
-async def send_doc(client, message):
-    update_channel = CHANNEL
-    user_id = message.from_user.id
-    if update_channel:
-        try:	
+@Client.on_message(filters.private &( filters.document | filters.audio | filters.video ))
+async def send_doc(client,message):
+       update_channel = CHANNEL
+       user_id = message.from_user.id
+       if update_channel :
+       	try:	
             await client.get_chat_member(update_channel, user_id)
         except UserNotParticipant:
             _newus = find_one(message.from_user.id)
@@ -116,7 +116,7 @@ async def send_doc(client, message):
                                      reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
                                          [[InlineKeyboardButton("⚜ Uᴘᴅᴀᴛᴇꜱ Cʜᴀɴɴᴇʟ", url=f"https://t.me/{update_channel}")]]))
-            await client.send_message(log_channel,f"🦋 #rename_logs 🦋,\n**ID** : `{user_id}`\n**Name**: {message.from_user.first_name} {message.from_user.last_name}\n Uꜱᴇʀ-Pʟᴀɴ : {user}\n\n ",
+            await client.send_message(log_channel,f"🦋 #rename_logs 🦋,\n**ɪᴅ** : `{user_id}`\n**Nᴀᴍᴇ**: {message.from_user.first_name} {message.from_user.last_name}\n Uꜱᴇʀ-Pʟᴀɴ : {user}\n\n ",
                                                                                                        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🔺 Rᴇꜱᴛʀɪᴄᴛ Uꜱᴇʀ ( PM ) 🔺", callback_data="ceasepower")]]))
             return
 
