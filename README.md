@@ -1,10 +1,10 @@
-<img src="https://telegra.ph/file/9936c273582628afb098c.png" alt="logo" target="/blank">
+<img src="https://graph.org/file/43f5c07fe7c7021b5e44a.jpg" alt="logo" target="/blank">
 
 <h1 align="center">
- <b><a href="https://telegram.me/LazyDeveloper" target="/blank"> Gangster Baby ( PREMIUM Renamer ) </a></>
+ <b><a href="https://t.me/Max_Leech_Zone_Update" target="/blank"> Gangster Baby ( PREMIUM Renamer ) </a></>
 </h1>
 
-<p align="center">🤍 Thanks for Being Here 🤍</p>
+<p align="center">🤍 𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐁𝐞𝐢𝐧𝐠 𝐇𝐞𝐫𝐞 🤍</p>
 
 
 ### ⚡️ Configs 
@@ -54,16 +54,17 @@
 
 
 #### 🥰 Features
- - Renames very fast .
- - Permanent Thumbnail support.
- - Force join for the user for use.
- - Supports Broadcasts.
- - Set custom caption.
- - Has a custom Start-up pic.
- - Force subscribe available.
- - Supports ulimited renaming at a time.
- - Deploy to Koyeb + Heroku + Railway.
- - Developer Service 24x7. 🔥
+ - 𝐑𝐞𝐧𝐚𝐦𝐞𝐬 𝐯𝐞𝐫𝐲 𝐟𝐚𝐬𝐭 .
+ - 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐬 𝟒𝐠𝐛 . 
+ - 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐓𝐡𝐮𝐦𝐛𝐧𝐚𝐢𝐥 𝐬𝐮𝐩𝐩𝐨𝐫𝐭.
+ - 𝐅𝐨𝐫𝐜𝐞 𝐣𝐨𝐢𝐧 𝐟𝐨𝐫 𝐭𝐡𝐞 𝐮𝐬𝐞𝐫 𝐭𝐡𝐞 𝐮𝐬𝐞.
+ - 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐬 𝐁𝐫𝐨𝐚𝐝𝐜𝐚𝐬𝐭𝐬.
+ - 𝐒𝐞𝐭 𝐜𝐮𝐬𝐭𝐨𝐦 𝐜𝐚𝐩𝐭𝐢𝐨𝐧.
+ - 𝐇𝐚𝐬 𝐚 𝐜𝐮𝐬𝐭𝐨𝐦 𝐒𝐭𝐚𝐫𝐭-𝐮𝐩 𝐩𝐢𝐜𝐤.
+ - 𝐅𝐨𝐫𝐜𝐞 𝐬𝐮𝐛𝐬𝐜𝐫𝐢𝐛𝐞 𝐚𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞.
+ - 𝐒𝐮𝐩𝐩𝐨𝐫𝐭𝐬 𝐮𝐥𝐢𝐦𝐢𝐭𝐞𝐝 𝐫𝐞𝐧𝐚𝐦𝐢𝐧𝐠 𝐚𝐭 𝐚 𝐭𝐢𝐦𝐞.
+ - 𝐃𝐞𝐩𝐥𝐨𝐲 𝐭𝐨 𝐊𝐨𝐲𝐞𝐛 + 𝐇𝐞𝐫𝐨𝐤𝐮 + 𝐑𝐚𝐢𝐥𝐰𝐚𝐲.
+ - 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 𝐒𝐞𝐫𝐯𝐢𝐜𝐞 𝟐𝟒×𝟕. 🔥
 
 ### 🚦 User Commands
 `/start` - Check if the bot is running.
@@ -95,20 +96,3 @@
 `/resetpower` - To reset renaming capacity (to default 1.2 GB)  [FOR ADMINS USE ONLY].
  
 `/addpremium` - To upgrade user plan to SILVER - GOLD - DIAMOND  [FOR ADMINS USE ONLY].
-
-
-### 🔗 important_Links
-- [🤩 Create Auto Filter BOT](https://www.youtube.com/watch?v=jw3e4L1u-Vo&t=22s)
-- [🤩 Create FILE TO LINK BOT](https://www.youtube.com/watch?v=h3Uvr15ZPnc)
-- [🤩 Create Movie Request BOT](https://www.youtube.com/watch?v=mIEv7MjLj2U&t=38s)
-- [❣️ Join Youtube](https://www.youtube.com/@LazyDeveloperr)
-
-
-#### 🧡 Respecting... 🧡
-- [🔥 LazyDeveloperr](https://github.com/LazyDeveloperr) 
-- [🔥 lntechnical2](https://github.com/lntechnical2)
-
-### 🤩 INSPIRATION
-<a href="#">
-   <p>❣️ GANGSTER-BABY 🔥</p>
-</a>
