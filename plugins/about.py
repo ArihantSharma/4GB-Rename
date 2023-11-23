@@ -13,10 +13,4 @@ async def start(client,message):
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"🤖 Mʏ Nᴀᴍᴇ : [Pʀᴇᴍɪᴜᴍ Rᴇɴᴀᴍᴇʀ](https://t.me/public_renamerbot)
-
-👑 Oᴡɴᴇʀ :  [₭𝐚𝐋𝐋Ꮼ𝐚 ...♡](https://t.me/mr_kallua)
-
-🧑🏻‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ : [「 #𝑷𝑹𝑶𝑭𝑬𝑺𝑺𝑶𝑹」🪐](https://t.me/PROFE07XHBOT)
-
-👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ : [Nᴏᴏʙs Eᴠᴇʀʏᴡʜᴇʀᴇ](https://t.me/Noobseverywhere) """\n\n 𝗧𝗼𝘁𝗮𝗹 𝗥𝗲𝗻𝗮𝗺𝗲𝗱 𝗙𝗶𝗹𝗲𝘀:- {total_rename}\n 𝗧𝗼𝘁𝗮𝗹 𝗦𝗶𝘇𝗲 𝗥𝗲𝗻𝗮𝗺𝗲𝗱 :- {humanbytes(int(total_size))} \n\n 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 ₭🅐︎🅛︎🅛︎Ꮼ🅐︎ ...♡ 🤝",quote=True)
+	await message.reply_text(f"**🤖 Mʏ Nᴀᴍᴇ :"" <a href='https://t.me/public_renamerbot'>Pʀᴇᴍɪᴜᴍ Rᴇɴᴀᴍᴇʀ</a>\n**👑 Oᴡɴᴇʀ :**  <a href='https://t.me/mr_kallua'>**₭𝐚𝐋𝐋Ꮼ𝐚 ...♡**</a>\n**🧑🏻‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ :** <a href='https://t.me/PROFE07XHBOT'>**「 #𝑷𝑹𝑶𝑭𝑬𝑺𝑺𝑶𝑹」🪐**</a>\n**👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ :** <a href='https://t.me/Noobseverywhere'>**Nᴏᴏʙs Eᴠᴇʀʏᴡʜᴇʀᴇ**</a>\n\n **Tᴏᴛᴀʟ Rᴇɴᴀᴍᴇᴅ Fɪʟᴇs** :- {total_rename}\n **Tᴏᴛᴀʟ Sɪᴢᴇ Rᴇɴᴀᴍᴇᴅ :-** {humanbytes(int(total_size))} \n\n 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 ₭🅐︎🅛︎🅛︎Ꮼ🅐︎ ...♡ 🤝",quote=True)
