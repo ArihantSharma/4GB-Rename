@@ -13,6 +13,4 @@ async def start(client,message):
 	data = find_one(int(botid))
 	total_rename = data["total_rename"]
 	total_size = data["total_size"]
-	await message.reply_text(f"**🤖 Mʏ Nᴀᴍᴇ :** <a href='https://t.me/public_renamerbot'>**Pʀᴇᴍɪᴜᴍ Rᴇɴᴀᴍᴇʀ**</a>\n**👑 Oᴡɴᴇʀ :**  <a href='https://t.me/mr_kallua'>**₭𝐚𝐋𝐋Ꮼ𝐚 ...♡**</a>\n**🧑🏻‍💻 Dᴇᴠᴇʟᴏᴘᴇʀ :** <a href='https://t.me/PROFE07XHBOT'>**「 #𝑷𝑹𝑶𝑭𝑬𝑺𝑺𝑶𝑹」🪐**</a>\n**👥 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ :** <a href='https://t.me/Noobseverywhere'>**Nᴏᴏʙs Eᴠᴇʀʏᴡʜᴇʀᴇ**</a>\n**🔐 Sᴏᴜʀᴄᴇ - Iᴛ's A Pʀɪᴠᴀᴛᴇ Rᴇᴘᴏ**\n\n**📁 Tᴏᴛᴀʟ Rᴇɴᴀᴍᴇᴅ Fɪʟᴇs** :- {total_rename}\n**🗃 Tᴏᴛᴀʟ Sɪᴢᴇ Rᴇɴᴀᴍᴇᴅ :-** {humanbytes(int(total_size))} \n\n 𝗧𝗵𝗮𝗻𝗸 𝘆𝗼𝘂 ₭🅐︎🅛︎🅛︎Ꮼ🅐︎ ...♡ 🤝",quote=True, 
-				 reply_markup= InlineKeyboardMarkup([[InlineKeyboardButton("🦋 Jᴏɪɴ Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🦋", url='https://t.me/Noobseverywhere')]]) 
-				)
+	await message.reply_text(f"᚛› 𝐔𝐬𝐞𝐫𝐬 - {total_user()}\n᚛› 𝐑𝐞𝐧𝐚𝐦𝐞 𝐅𝐢𝐥𝐞𝐬 - {total_rename}\n᚛› 𝐑𝐞𝐧𝐚𝐦𝐞𝐝 𝐒𝐢𝐳𝐞 - {humanbytes(int(total_size))}",quote=True)
