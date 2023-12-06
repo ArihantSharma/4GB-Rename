@@ -16,15 +16,15 @@ from helper.date import check_expi
 import os
 import re, asyncio, os, sys
 
-CHANNEL = os.environ.get('CHANNEL', "Max_Leech_Zone_Update")
+CHANNEL = os.environ.get('CHANNEL', "")
 STRING = os.environ.get("STRING", "")
-ADMIN = int(os.environ.get("ADMIN", 6263893478))
-bot_username = os.environ.get("BOT_USERNAME","public_renamerbot")
-log_channel = int(os.environ.get("LOG_CHANNEL", "-1002066295284"))
-token = os.environ.get('TOKEN', '6927866559:AAFCRzLBFtIrotS9iDsGK7DO9H9FPhL9F7c')
+ADMIN = int(os.environ.get("ADMIN", ))
+bot_username = os.environ.get("BOT_USERNAME","")
+log_channel = int(os.environ.get("LOG_CHANNEL", ""))
+token = os.environ.get('TOKEN', '')
 botid = token.split(':')[0]
 FLOOD = 500
-LAZY_PIC = os.environ.get("LAZY_PIC", "https://telegra.ph/file/76d2ce61434f88159952b.jpg")
+LAZY_PIC = os.environ.get("LAZY_PIC", "")
 
 
 # Part of Day --------------------
